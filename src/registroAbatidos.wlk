@@ -26,17 +26,12 @@ object registroAbatidosCOD {
 	method cantidadDeAbatidosElDia(dia){
 		var cont=0;
 		var bandera=true;		
-		dias.forEach({
-			d =>			
-			if (d==dia){
-				cont+=1
-				bandera=false
-			}
+		dias.forEach({d =>			
 			if(d!=dia&&bandera){
 				cont+=1
-			}
+			}else{bandera=false}
 		})
-		return abatidos.get(cont-1);
+		return abatidos.get(cont);
 	}
 	method ultimoValorDeAbatidosConSize(){
 		return abatidos.get(abatidos.size()-1);
