@@ -137,4 +137,4 @@ true
 2
 >>> cod.esCrack()
 false
-*/ 
+*/
